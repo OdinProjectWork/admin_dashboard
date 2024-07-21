@@ -1,0 +1,389 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    display: grid;
+    background-color: #00a9e0;
+    grid-template-columns: 1fr 3fr 1fr;
+    min-height: 100vh;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    box-shadow: 0px 10px 5px 0px rgba(15, 15, 15, 0.45);
+}
+
+.header .top-header {
+    display: grid;
+    padding: 0;
+    margin-top: 0px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.header .top-header .top-right .top-right-icon {
+    height: 55px;
+}
+
+.header .top-right {
+    display: flex;
+    gap: 48px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 28px;
+    align-items: center;
+}
+
+.header .bottom-header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.header .bottom-header .first-half {
+    padding-top: 0;
+    /* Remove any top padding */
+    margin-top: 0;
+}
+
+
+.header .bottom-header .greeting {
+    display: flex;
+    grid-column: 1/2;
+    flex-direction: column;
+}
+
+.header .bottom-header .greeting p {
+    margin: 0;
+    font-size: 20px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.header .bottom-header .greeting h1 {
+    margin: 0;
+    /* Remove any default margin */
+    padding: 0;
+    /* Remove any default padding */
+    font-size: 2em;
+}
+
+.header .bottom-header .button-container {
+    display: flex;
+    padding: 6px;
+    grid-column: 2/3;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header .bottom-header .first-half {
+    display: flex;
+    align-items: center;
+}
+
+.header .bottom-header .first-half .main-profile-pic {
+    margin-left: 2%;
+    object-fit: cover;
+    margin-right: 6%;
+}
+
+.header .bottom-header .button-container button {
+    background-color: #753BBD;
+    color: white;
+    border: solid 1px #fff;
+    width: 20%;
+    height: 60%;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+    justify-content: space-between;
+
+}
+
+.profile-pics {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 60px;
+    width: 60px;
+}
+
+.main-profile-pic {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.header {
+    display: grid;
+    gap: 15px;
+    padding: 40px;
+    background-color: white;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    font-family: Roboto;
+}
+
+.header .searchbar {
+    width: 75%;
+    height: 80%;
+    border: 0px solid;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+}
+
+.sidebar {
+    display: grid;
+    grid-row: 1/4;
+    grid-template-rows: 0.15fr 0.4fr 0.45fr;
+    background-color: #753BBD;
+    color: white;
+    margin-bottom: 0;
+    font-family: Roboto;
+    font-size: 24px;
+}
+
+.sidebar-logo {
+    margin-top: -25px;
+    height: 150px;
+}
+
+.sidebar .logo .logo-text {
+    display: grid;
+    font-size: 45px;
+}
+
+.sidebar .logo {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-row: 1/1;
+    height: 150px;
+    padding: 0px 20px 20px 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: top;
+}
+
+.sidebar .menu {
+    margin-bottom: -100px;
+}
+
+.sidebar .menu ul {
+    display: grid;
+    gap: 25px;
+}
+
+.sidebar .menu ul li {
+    display: flex;
+    justify-content: start;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.search-box {
+    padding: 20px;
+    display: flex;
+}
+
+.sidebar .settings ul li {
+    display: flex;
+    font-size: 32px;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+    padding-bottom: 50px;
+    font-weight: bold;
+}
+
+.sidebar-icons {
+    fill: white;
+    height: 40px;
+    margin-bottom: -5px;
+    margin-right: 40px;
+}
+
+.main_page {
+    display: grid;
+    grid-row: 2/4;
+    margin: 40px;
+    font-family: Roboto;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 25px;
+}
+
+.main_page .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.projects .card {
+    display: grid;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 350px;
+    border-radius: 2% 5% 5% 2%;
+    border-left: 20px solid #753BBD;
+    box-shadow: 0px 5px 5px 0px rgba(15, 15, 15, 0.45);
+    color: black;
+}
+
+.projects .card .card_title {
+    justify-self: start;
+    font-weight: bold;
+    align-self: start;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 30px;
+}
+
+.projects .card p {
+    justify-self: start;
+    align-self: start;
+    padding-bottom: 100px;
+    margin-top: 0px;
+    padding-left: 40px;
+    width: 70%;
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+.projects .card .card-icons {
+    justify-self: end;
+    margin-top: -50px;
+    margin-right: 20px;
+    height: 50px;
+}
+
+
+.announcements {
+    display: grid;
+    width: 90%;
+    height: 100%;
+    padding-top: 40px;
+    justify-self: center;
+    grid-template-rows: 1fr 8fr;
+    font-family: Roboto;
+}
+
+.announcement-container {
+    display: grid;
+    background-color: #FFFFFF;
+    justify-self: start;
+    width: 80%;
+    min-height: 80%;
+    padding-bottom: 20px;
+    border-radius: 5%;
+    box-shadow: 0px 5px 5px 0px rgba(15, 15, 15, 0.45);
+
+
+}
+
+.announcements .title {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+.announcement {
+    display: grid;
+    font-family: Roboto;
+}
+
+.announcement_title {
+    font-weight: bold;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 20px;
+    align-self: center;
+}
+
+.announcement p {
+    align-self: center;
+    width: 70%;
+    opacity: 0.6;
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+.announcements .announcement-container .separator {
+    width: 85%;
+    margin: 0 auto;
+    height: 1px;
+    border-top: 2px #563397 solid;
+}
+
+.trending {
+    display: grid;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    font-family: Roboto;
+}
+
+.trending .title {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+.trending_container {
+    background-color: white;
+    align-items: center;
+    justify-self: start;
+    margin-left: 30px;
+    border-radius: 5%;
+    width: 70%;
+    box-shadow: 0px 5px 5px 0px rgba(15, 15, 15, 0.45);
+
+}
+
+.trend {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+}
+
+.trending-description {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: -20px;
+    justify-self: center;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+    margin-bottom: -10px;
+    font-size: 20px;
+}
+
+.trending-description p {
+    opacity: 0.6;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+}
